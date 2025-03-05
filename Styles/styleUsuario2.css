@@ -1,0 +1,19 @@
+/* Estilos específicos para Usuario2 (Josep Fiestas) */
+/* Se mantiene el mismo formato y colores definidos en main.css */
+
+img {
+  border: 5px solid #1565c0; /* Azul medio */
+  max-width: 220px;
+  transition: transform 0.3s;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+/* Títulos y detalles personalizados */
+h1, h2 {
+  color: #fff; /* Azul fuerte */
+}
+
+/* Puedes agregar más estilos específicos para Usuario2 aquí si lo deseas */
