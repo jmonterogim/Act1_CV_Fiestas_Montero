@@ -1,0 +1,15 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fce4ec;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+.cv-container img {
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+footer {
+    margin-top: 30px;
+    color: #666;
+}
