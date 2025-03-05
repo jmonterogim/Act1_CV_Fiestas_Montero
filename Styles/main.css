@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #bbdefb); /* Azul claro */
+  color: #1a237e; /* Azul oscuro */
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Encabezado espectacular para todas las páginas */
+header {
+  background: linear-gradient(135deg, #0d47a1, #1976d2); /* Azul fuerte */
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3em;
+  margin-bottom: 10px;
+  animation: slideIn 1s ease-out;
+}
+
+header p {
+  font-size: 1.2em;
+  animation: fadeIn 2s ease-in;
+}
+
+/* Menú de navegación (usado en index.html) */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #1565c0; /* Azul medio */
+  padding: 10px 20px;
+  border-radius: 50px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #0d47a1; /* Azul más oscuro */
+}
+
+/* Secciones de contenido */
+main section {
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main section h2 {
+  color: #0d47a1; /* Azul fuerte */
+  margin-bottom: 10px;
+  font-size: 2em;
+  border-bottom: 2px solid #1976d2; /* Azul intermedio */
+  padding-bottom: 5px;
+}
+
+main section p {
+  margin-bottom: 15px;
+}
+
+/* Listas y enlaces */
+ul {
+  margin-left: 20px;
+  font-size: 1.1em;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+a {
+  color: #0d47a1;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #1976d2;
+}
+
+/* Botón de Volver al Inicio (icono de casa) */
+.home-link {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #1565c0;
+  padding: 10px 15px;
+  border-radius: 50px;
+  transition: background-color 0.3s;
+}
+
+.home-link:hover {
+  background-color: #0d47a1;
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+  padding: 20px;
+  background-color: #0d47a1;
+  border-radius: 10px;
+}
+
+/* Animaciones */
+@keyframes slideIn {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
