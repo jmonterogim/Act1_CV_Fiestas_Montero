@@ -1,7 +1,8 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    background: linear-gradient(45deg, #e73b0673, #ea13948c, #3666cf8a, #23d54194);
+    background-size: 2000% 2000%;
+    animation: gradient 20s ease-in infinite;
     margin: 0;
     padding: 0;
     display: flex;
@@ -10,12 +11,43 @@ body {
     justify-content: center;
     height: 100vh;
 }
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 0%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+h1 {
+    color: white;
+    font-size: 100px;
+}
+
+p {
+    color: white;
+    font-size: 21px;
+
+}
+
 header {
     background: none;
     color: #333;
     text-align: center;
     padding: 20px;
 }
+
+section {
+    align-items: center;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -23,32 +55,47 @@ nav ul {
     gap: 15px;
     justify-content: center;
 }
+
 nav ul li {
     display: inline;
 }
+
 nav ul li a {
     color: #333;
     text-decoration: none;
     font-weight: bold;
 }
+
 .button-container {
     text-align: center;
     margin-top: 20px;
 }
+
 .button-container button {
+
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    color: white;
+    font-size: 20px;
     background-color: #007bff;
     color: white;
     border: none;
-    padding: 12px 24px;
-    margin: 10px;
+    padding: 17px 24px;
+    margin: 25px;
     cursor: pointer;
     border-radius: 25px;
-    font-size: 16px;
-    transition: background 0.3s;
+    transition: 0.3s;
+    box-shadow:
+        0px 5px 10px 2px rgba(0, 0, 255, 0.2),
+        0px 2px 5px 1px rgba(0, 0, 0, 0.6);
+
 }
+
+
 .button-container button:hover {
-    background-color: #0056b3;
+    background-color: #00b377bb;
 }
+
+
 footer {
     margin-top: 30px;
     text-align: center;
